@@ -13,9 +13,12 @@ export default function Banner() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         aspectRatio: 5 / 2,
-        filter: "brightness(0.5)",
+        zIndex: 1,
+        // filter: "brighhtness(0.5)",
+        position: "relative",
       }}
     >
+      <div className={styles.burl} />.
       <SearchInput />
     </section>
   );

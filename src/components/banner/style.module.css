@@ -1,1 +1,9 @@
-.wrapper {}
+.burl {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+  opacity: 0.8;
+  background: rgba(1, 1, 1, 0.8);
+}
