@@ -1,0 +1,32 @@
+.button {
+  border: none;
+  height: 2.75rem;
+  border-radius: var(--border-radius);
+  padding: 0px 1rem;
+
+  cursor: pointer;
+
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+/* .button:hover {
+  transform: scale(1.01);
+} */
+
+.primary {
+  background-color: var(--bg-primary);
+}
+
+.primary:hover {
+  background: var(--text-primary);
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid var(--bg-primary)
+}
+
+.outline:hover {
+  border: 1px solid var(--text-primary)
+}

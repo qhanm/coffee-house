@@ -1,0 +1,53 @@
+.popper {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  transition-delay: 0s;
+
+  background-color: var(--background);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  min-width: 200px;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  z-index: 20;
+}
+
+.popper:hover .content,
+.popper .content:hover {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%);
+  transition-delay: 0.1s;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.5rem;
+  height: 0.5rem;
+  background: transparent;
+}
+
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title path {
+  fill: currentColor;
+}

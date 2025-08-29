@@ -1,0 +1,42 @@
+/* css Menu */
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.menu li.active,
+.menu li:hover {
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--text-primary);
+}
+
+.subMenu li {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-black);
+  font-size: 1rem;
+}
+
+.subMenu li span:nth-child(2) {
+  color: var(--tex-gray);
+  font-size: 0.875rem;
+}
+
+.subMenu li:hover {
+  border: 0px;
+}
+
+.subMenu li:hover span:nth-child(2) {
+  color: var(--text-primary);
+}

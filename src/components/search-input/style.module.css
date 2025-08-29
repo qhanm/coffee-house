@@ -1,0 +1,29 @@
+.inputWrapper {
+  height: 3.25rem;
+  max-width: 480px;
+  padding: 0 1.5rem;
+
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+
+  border: 1px solid;
+  border-image-source: linear-gradient(262.07deg, #F8E4BE 14.64%, #FFF3E0 40.26%, #FFF8E8 62%, #DFC39D 93.82%);
+  border-image-slice: 1;
+  border-radius: var(--border-radius);
+}
+
+.inputSearch {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: 0px;
+}
+
+.line {
+  height: 2rem;
+  width: 1px;
+  background-color: var(--tex-gray);
+  border: 1px solid;
+
+}

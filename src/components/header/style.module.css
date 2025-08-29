@@ -1,0 +1,26 @@
+.headerWrapper {
+  height: 4rem;
+
+  background: var(--bg-header);
+  color: var(--text-white);
+  margin: 0px auto;
+}
+
+.container {
+  box-sizing: border-box;
+  height: 100%;
+  max-width: var(--max-width);
+  padding: 0.5rem;
+
+  margin: 0px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightContent {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
