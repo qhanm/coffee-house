@@ -1,39 +1,24 @@
-.inputWrapper {
-  position: relative;
-  height: 3.25rem;
+.wrapper {
   max-width: 480px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Input search style  */
+.inputWrapper {
+  height: 3.25rem;
+  width: 100%;
   padding: 0 1.5rem;
+  box-sizing: border-box;
 
   display: flex;
   gap: 1.5rem;
   align-items: center;
 
-  border-radius: var(--border-radius);
   z-index: 3;
-
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-
-
-}
-
-.inputWrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(262.07deg,
-      #F8E4BE 14.64%,
-      #FFF3E0 40.26%,
-      #FFF8E8 62%,
-      #DFC39D 93.82%);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-  z-index: -1;
 }
 
 .inputSearch {
@@ -53,5 +38,55 @@
   width: 1px;
   background-color: var(--tex-gray);
   border: 1px solid;
+}
 
+/* Search Box style  */
+.searchResult {
+  z-index: 3;
+  width: 100%;
+}
+
+.searchResultItem {
+  height: 3.75rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchResultItem:hover {
+  margin: 1px;
+  width: calc(100% - 2px);
+  background-color: var(--bg-primary-hover);
+
+  /* background-color: var(--bg-primary-hover); */
+  /* outline: 1px solid var(--bg-primary-hover); */
+  /* outline-offset: -1px; */
+}
+
+.searchResultItem:last-child:hover {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.searchResultItem:first-child:hover {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.searchResultItem p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.searchResultItem p:first-child {
+  color: var(--text-white);
+}
+
+.searchResultItem p:last-child {
+  font-size: 0.875rem;
+  color: var(--tex-gray);
 }

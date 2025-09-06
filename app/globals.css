@@ -6,8 +6,15 @@
   --tex-gray: rgba(133, 133, 133, 1);
   --text-primary: #D3AD7F;
   --bg-primary: rgba(211, 173, 127, 0.7);
+  --bg-primary-hover: #383838;
   --max-width: 1200px;
   --border-radius: 0.5rem;
+
+  --gradient-border: linear-gradient(262.07deg,
+      #F8E4BE 14.64%,
+      #FFF3E0 40.26%,
+      #FFF8E8 62%,
+      #DFC39D 93.82%);
 }
 
 * {
