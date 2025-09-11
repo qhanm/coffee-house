@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+
+.content {
+  padding: 0.875rem;
+  background: rgba(255, 255, 255, .7);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.name {
+  text-align: center;
+}
+
+.decs {
+  margin-top: 0.25rem;
+  color: var(--tex-gray);
+  font-size: 0.875rem;
+}

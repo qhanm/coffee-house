@@ -1,0 +1,13 @@
+.wrapper {
+  background: linear-gradient(262.07deg, rgba(248, 228, 190, 0.4) 14.64%, rgba(255, 243, 224, 0.4) 40.26%, rgba(255, 248, 232, 0.4) 62%, rgba(223, 195, 157, 0.4) 93.82%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  z-index: 2;
+}

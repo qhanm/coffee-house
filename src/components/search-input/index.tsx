@@ -30,9 +30,11 @@ export default function SearchInput() {
         <Icon.Search />
       </BoxGradient>
       <BoxGradient className={styles.searchResult}>
-        <SearchResultItem />
-        <SearchResultItem />
-        <SearchResultItem />
+        <div className={styles.searchResultList}>
+          <SearchResultItem />
+          <SearchResultItem />
+          <SearchResultItem />
+        </div>
       </BoxGradient>
     </div>
   );

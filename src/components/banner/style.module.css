@@ -7,3 +7,46 @@
   opacity: 0.8;
   background: rgba(1, 1, 1, 0.8);
 }
+
+.wrapper {
+  background-repeat: no-repeat;
+  width: "100vw";
+  background-size: "cover";
+  background-position: "center";
+  aspect-ratio: 5 / 2;
+  z-index: 1;
+  position: relative;
+  margin: auto;
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: auto;
+
+  display: flex;
+  gap: 4rem;
+}
+
+.leftContent {
+  width: 100%;
+  color: var(--text-white);
+  z-index: 2;
+}
+
+.leftContentFirst {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.leftContentSecond {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.leftContentThird {
+  font-size: 1.25rem;
+  margin: 1rem 0px;
+}
